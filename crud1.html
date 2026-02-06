@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Firestore con Subcolecciones</title>
+</head>
+<body>
+
+  <h1>CRUD Firestore (NoSQL + Subcolecciones)</h1>
+
+  <!-- ================= CREATE ================= -->
+  <h2>Crear usuario con curso</h2>
+  <button onclick="crearUsuarioConCurso()">
+    Crear usuario + curso
+  </button>
+
+  <!-- ================= READ ================= -->
+  <h2>Obtener usuarios y cursos</h2>
+  <button onclick="obtenerUsuariosYCurso()">
+    Mostrar usuarios y cursos
+  </button>
+
+  <pre id="resultado"></pre>
+
+  <!-- ================= UPDATE ================= -->
+  <h2>Actualizar curso de un usuario</h2>
+  <input type="text" id="userIdCurso" placeholder="ID del usuario">
+  <input type="text" id="cursoIdActualizar" placeholder="ID del curso">
+  <input type="number" id="creditosNuevos" placeholder="Nuevos créditos">
+  <button onclick="actualizarCurso()">
+    Actualizar curso
+  </button>
+
+  <!-- ================= DELETE ================= -->
+  <h2>Eliminar curso de un usuario</h2>
+  <input type="text" id="userIdEliminar" placeholder="ID del usuario">
+  <input type="text" id="cursoIdEliminar" placeholder="ID del curso">
+  <button onclick="eliminarCurso()">
+    Eliminar curso
+  </button>
+
+  <!-- ================= SCRIPT ================= -->
+  <script type="module" src="./crud1.js"></script>
+
+</body>
+</html>
