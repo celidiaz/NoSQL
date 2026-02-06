@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Firestore</title>
+</head>
+<body>
+
+  <h1>CRUD Firestore (NoSQL)</h1>
+
+  <!-- CREATE -->
+  <h2>Crear usuario</h2>
+  <button onclick="crearUsuarioDesdeHTML()">Crear usuario</button>
+
+  <!-- READ -->
+  <h2>Obtener usuarios</h2>
+  <button onclick="obtenerUsuariosDesdeHTML()">Mostrar usuarios</button>
+  <pre id="resultado"></pre>
+
+  <!-- UPDATE -->
+  <h2>Actualizar usuario</h2>
+  <input type="text" id="idActualizar" placeholder="ID del usuario">
+  <input type="number" id="edadNueva" placeholder="Nueva edad">
+  <button onclick="actualizarDesdeHTML()">Actualizar</button>
+
+  <!-- DELETE -->
+  <h2>Eliminar usuario</h2>
+  <input type="text" id="idEliminar" placeholder="ID del usuario">
+  <button onclick="eliminarDesdeHTML()">Eliminar</button>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <script type="module" src="./main.js"></script>
+
+</body>
+</html>
